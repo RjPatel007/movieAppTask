@@ -1,16 +1,52 @@
 # movie_task_app
+A Flutter application to manage a list of movies, allowing users to add, delete, and mark movies as favorite.
 
-A new Flutter project.
+## Flutter Version
 
-## Getting Started
+This project uses Flutter version 3.24.0. Ensure you have this version installed to avoid compatibility issues.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/RjPatel007/movieAppTask.git
+    cd movie_app_task
+    ```
+2. **Install dependencies**:
+    ```sh
+    flutter pub get
+    ```
+3. **Set up the database**:
+   Ensure that the `sqflite` and `sqflite_common_ffi` packages are properly configured in your `pubspec.yaml`.
+## Usage
+1. **Run the application**:
+    ```sh
+    flutter run
+    ```
+2. **Run tests**:
+    ```sh
+    flutter test
+    ```
+## Features
+- Add new movies with title, description, and image.
+- Delete movies from the list.
+- Mark movies as favorite/unfavorite.
+- View a list of all movies.
+- View a list of favorite movies by clicking the drawer.
+## Running Tests
+To run the tests for this application, follow these steps:
+1. **Ensure the database is set up**:
+   Make sure the database is properly initialized and configured.
+2. **Run all tests**:
+    ```sh
+    flutter test
+    ```
+3. **Run a specific test file**:
+    ```sh
+    flutter test test/widget_test.dart
+    ```
+4. **Run tests with detailed output**:
+    ```sh
+    flutter test --verbose
+    ```
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

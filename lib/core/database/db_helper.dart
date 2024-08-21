@@ -77,4 +77,14 @@ class DBHelper {
       rethrow;
     }
   }
+
+  Future<List<ModelMovie>> clearDB() async {
+    try {
+      await _db?.rawDelete("DELETE FROM $movies");
+      return [];
+    } catch (e) {
+      rethrow;
+    }
+  }
+
 }

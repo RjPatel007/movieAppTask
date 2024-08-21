@@ -58,7 +58,7 @@ class MovieListWidget extends StatelessWidget {
           children: [
             ClipRRect(
                 borderRadius: BorderRadius.circular(11),
-                child: Image.file(File(movie.imagePath))),
+                child: Image.file(File(movie.imagePath),width: 80,fit: BoxFit.cover,)),
             const SizedBox(
               width: 10,
             ),

@@ -1,5 +1,7 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movie_task_app/core/models/model_movie.dart';
+
 import '../../database/db_helper.dart';
 
 part 'movie_event.dart';
